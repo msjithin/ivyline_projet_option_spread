@@ -3,7 +3,7 @@ import pandas_datareader.data as web
 import numpy as np
 import streamlit as st
 import requests, time, re, pickle
-from config import ameritrade_key
+import config 
 
 instrument_url = 'https://api.tdameritrade.com/v1/instruments'
 option_url = 'https://api.tdameritrade.com/v1/marketdata/chains'
