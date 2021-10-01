@@ -14,7 +14,7 @@ symbols = ['AAPL', 'FB']
 def get_fundamentals(ticker=""):
     start, end = 0, 500
     
-    payload = {'apikey':st.secrets.td_credentials.ameritrade_key,
+    payload = {'apikey':st.secrets["ameritrade_key"],
             'symbol':ticker,
             'projection':'fundamental'
             }
