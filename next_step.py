@@ -3,7 +3,6 @@ import pandas_datareader.data as web
 import numpy as np
 import streamlit as st
 import requests, time, re, pickle
-import config 
 
 instrument_url = 'https://api.tdameritrade.com/v1/instruments'
 option_url = 'https://api.tdameritrade.com/v1/marketdata/chains'
@@ -14,7 +13,7 @@ symbols = ['AAPL', 'FB']
 def get_fundamentals(ticker=""):
     start, end = 0, 500
     
-    payload = {'apikey':ameritrade_key,
+    payload = {'apikey': st.secrets["ameritrade_key"] ,
             'symbol':ticker,
             'projection':'fundamental'
             }
@@ -25,7 +24,7 @@ def get_fundamentals(ticker=""):
 def get_option_data(ticker=""):
     start, end = 0, 500
     
-    payload = {'apikey':ameritrade_key,
+    payload = {'apikey':st.secrets["ameritrade_key"] ,
             'symbol':ticker,
             'contractType' : 'CALL',
             'strikeCount' : 2,
