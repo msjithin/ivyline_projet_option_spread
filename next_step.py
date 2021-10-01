@@ -13,7 +13,11 @@ symbols = ['AAPL', 'FB']
 def get_fundamentals(ticker=""):
     start, end = 0, 500
     
+<<<<<<< HEAD
     payload = {'apikey': st.secrets["ameritrade_key"] ,
+=======
+    payload = {'apikey':st.secrets["ameritrade_key"],
+>>>>>>> f753c4de2693ae0c8dfe60c2406b4b35a51e9e2b
             'symbol':ticker,
             'projection':'fundamental'
             }
