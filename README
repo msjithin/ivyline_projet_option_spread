@@ -1,3 +1,7 @@
+DISCLAIMER: This is not financial advice. This is a personal side project I took up for fun.
+Any losses acquired from using this is not my responsibility. This is for educational and informational purposes only. -Jithin
+
+
 To run the file as web app do
 streamlit run options_spread_check.py  
 
@@ -12,3 +16,6 @@ https://github.com/sfl666/option_tools
 
 Calculate IV percentile for the stock 
 Make a spread recommendation system!
+
+
+
